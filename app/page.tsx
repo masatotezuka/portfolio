@@ -1,7 +1,6 @@
-'use client'
 import { Sidebar } from './components/Sidebar'
 import * as styles from './page.css'
-import { Element } from 'react-scroll'
+
 export default function Home() {
   return (
     <div className={styles.container}>
