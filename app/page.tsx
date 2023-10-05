@@ -1,5 +1,7 @@
 import { Sidebar } from './components/Sidebar'
 import * as styles from './page.css'
+import { Section } from './components/Section'
+import { About } from './components/About'
 
 export default function Home() {
   return (
@@ -8,23 +10,21 @@ export default function Home() {
         <Sidebar />
       </div>
       <div className={styles.mainContainer}>
-        <div id='about' className={styles.contentContainer}>
-          <h1 className={styles.title}>About</h1>
-          {/* ここにプロフィール画像 */}
-          <p>{/* 自己紹介 */}</p>
-        </div>
-        <div id='skills' className={styles.contentContainer}>
-          <h1 className={styles.title}>Skills</h1>
-        </div>
-        <div id='education' className={styles.contentContainer}>
-          <h1 className={styles.title}>Education</h1>
-        </div>
-        <div id='links' className={styles.contentContainer}>
-          <h1 className={styles.title}>Links</h1>
-        </div>
-        <div id='contact' className={styles.contentContainer}>
-          <h1 className={styles.title}>Contact</h1>
-        </div>
+        <Section title='About' sectionLabel='about'>
+          <About />
+        </Section>
+        <Section title='Skills' sectionLabel='skills'>
+          <p>skill</p>
+        </Section>
+        <Section title='Education' sectionLabel='education'>
+          <p>education</p>
+        </Section>
+        <Section title='Links' sectionLabel='links'>
+          <p>Links</p>
+        </Section>
+        <Section title='Contact' sectionLabel='contact'>
+          <p>contact</p>
+        </Section>
       </div>
     </div>
   )
