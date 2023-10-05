@@ -23,14 +23,3 @@ export const mainContainer = style({
   display: 'flex',
   flexDirection: 'column'
 })
-
-export const title = style({
-  margin: '60px 0px',
-  fontSize: '40px'
-})
-
-export const description = style({})
-
-export const contentContainer = style({
-  height: '100vh'
-})
