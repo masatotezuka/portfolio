@@ -2,6 +2,7 @@ import { Sidebar } from './components/Sidebar'
 import * as styles from './page.css'
 import { Section } from './components/Section'
 import { About } from './components/About'
+import { Skills } from './components/Skills'
 
 export default function Home() {
   return (
@@ -14,7 +15,7 @@ export default function Home() {
           <About />
         </Section>
         <Section title='Skills' sectionLabel='skills'>
-          <p>skill</p>
+          <Skills />
         </Section>
         <Section title='Education' sectionLabel='education'>
           <p>education</p>
