@@ -58,3 +58,26 @@ export const SKILL_LIST = [
     image: '/skills/postgresql.svg'
   }
 ]
+
+export const SECTION = {
+  ABOUT: {
+    title: 'About',
+    sectionLabel: 'about'
+  },
+  SKILLS: {
+    title: 'Skills',
+    sectionLabel: 'skills'
+  },
+  BIO: {
+    title: 'Bio',
+    sectionLabel: 'bio'
+  },
+  LINKS: {
+    title: 'Links',
+    sectionLabel: 'links'
+  },
+  CONTACT: {
+    title: 'Contact',
+    sectionLabel: 'contact'
+  }
+}
