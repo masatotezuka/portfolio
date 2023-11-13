@@ -1,10 +1,35 @@
-export const NAV_ITEMS = [
-  { to: 'about', label: 'ABOUT' },
-  { to: 'skills', label: 'SKILLS' },
-  { to: 'education', label: 'EDUCATION' },
-  { to: 'links', label: 'LINKS' },
-  { to: 'contact', label: 'CONTACT' }
-]
+export const SECTION_LIST = {
+  ABOUT: {
+    title: 'About',
+    sectionLabel: 'about',
+    navLabel: 'ABOUT',
+    navTo: 'about'
+  },
+  SKILLS: {
+    title: 'Skills',
+    sectionLabel: 'skills',
+    navLabel: 'SKILLS',
+    navTo: 'skills'
+  },
+  BIO: {
+    title: 'Bio',
+    sectionLabel: 'bio',
+    navLabel: 'BIO',
+    navTo: 'bio'
+  },
+  LINKS: {
+    title: 'Links',
+    sectionLabel: 'links',
+    navLabel: 'LINKS',
+    navTo: 'links'
+  },
+  CONTACT: {
+    title: 'Contact',
+    sectionLabel: 'contact',
+    navLabel: 'CONTACT',
+    navTo: 'contact'
+  }
+}
 
 export const SKILL_LIST = [
   {
@@ -58,26 +83,3 @@ export const SKILL_LIST = [
     image: '/skills/postgresql.svg'
   }
 ]
-
-export const SECTION = {
-  ABOUT: {
-    title: 'About',
-    sectionLabel: 'about'
-  },
-  SKILLS: {
-    title: 'Skills',
-    sectionLabel: 'skills'
-  },
-  BIO: {
-    title: 'Bio',
-    sectionLabel: 'bio'
-  },
-  LINKS: {
-    title: 'Links',
-    sectionLabel: 'links'
-  },
-  CONTACT: {
-    title: 'Contact',
-    sectionLabel: 'contact'
-  }
-}
