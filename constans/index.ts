@@ -83,3 +83,31 @@ export const SKILL_LIST = [
     image: '/skills/postgresql.svg'
   }
 ]
+
+export const LINK_LIST = [
+  {
+    name: 'GitHub',
+    image: '/links/github-mark.svg',
+    url: 'https://github.com/masatotezuka'
+  },
+  {
+    name: 'x',
+    image: '/links/x-logo.png',
+    url: 'https://twitter.com/tezmasatoo'
+  },
+  {
+    name: 'note',
+    image: '/links/note-icon.svg',
+    url: 'https://note.com/mst_tez'
+  },
+  {
+    name: 'zenn',
+    image: '/links/zenn-logo.svg',
+    url: 'https://zenn.dev/masatotezuka'
+  },
+  {
+    name: 'facebook',
+    image: '/links/facebook-logo.png',
+    url: 'https://www.facebook.com/profile.php?id=100022391745587'
+  }
+]
