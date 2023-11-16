@@ -14,7 +14,7 @@ export const About: FC = () => {
             alt='profile image'
             width={1280}
             height={852}
-            style={{ width: '100%', height: 'auto' }}
+            className={styles.image}
           />
         </div>
         <div className={styles.introductionContainer}>

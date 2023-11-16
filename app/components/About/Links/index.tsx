@@ -7,23 +7,17 @@ import * as styles from './link.css'
 export const Links: FC = () => {
   return (
     <div className={styles.container}>
-      <div className={styles.imageContainer}>
+      <div className={styles.linkListContainer}>
         {LINK_LIST.map((link) => {
           return (
-            <div key={link.url} className={styles.image}>
+            <div key={link.url} className={styles.imageContainer}>
               <Image
                 onClick={() => window.open(link.url)}
                 src={link.image}
                 alt={link.name}
                 width={1280}
                 height={852}
-                style={{
-                  width: '100%',
-                  height: 'auto',
-                  filter: 'drop-shadow(7px 9px 6px #aaaaaa)',
-                  cursor: 'pointer',
-                  objectFit: 'contain'
-                }}
+                className={styles.image}
               />
             </div>
           )
