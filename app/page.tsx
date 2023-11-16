@@ -19,26 +19,26 @@ export default function Home() {
         >
           <About />
         </Section>
+        <Section title={SECTION_LIST['BIO'].title} sectionLabel={SECTION_LIST['BIO'].sectionLabel}>
+          <Bio />
+        </Section>
         <Section
           title={SECTION_LIST['SKILLS'].title}
           sectionLabel={SECTION_LIST['SKILLS'].sectionLabel}
         >
           <Skills />
         </Section>
-        <Section title={SECTION_LIST['BIO'].title} sectionLabel={SECTION_LIST['BIO'].sectionLabel}>
-          <Bio />
+        <Section
+          title={SECTION_LIST['ARTICLES'].title}
+          sectionLabel={SECTION_LIST['ARTICLES'].sectionLabel}
+        >
+          <p>coming soon...</p>
         </Section>
         <Section
-          title={SECTION_LIST['LINKS'].title}
-          sectionLabel={SECTION_LIST['LINKS'].sectionLabel}
+          title={SECTION_LIST['WORKS'].title}
+          sectionLabel={SECTION_LIST['WORKS'].sectionLabel}
         >
-          <p>Links</p>
-        </Section>
-        <Section
-          title={SECTION_LIST['CONTACT'].title}
-          sectionLabel={SECTION_LIST['CONTACT'].sectionLabel}
-        >
-          <p>contact</p>
+          <p>Coming soon...</p>
         </Section>
       </div>
     </div>

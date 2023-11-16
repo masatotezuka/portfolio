@@ -2,32 +2,27 @@ export const SECTION_LIST = {
   ABOUT: {
     title: 'About',
     sectionLabel: 'about',
-    navLabel: 'ABOUT',
-    navTo: 'about'
-  },
-  SKILLS: {
-    title: 'Skills',
-    sectionLabel: 'skills',
-    navLabel: 'SKILLS',
-    navTo: 'skills'
+    navLabel: 'ABOUT'
   },
   BIO: {
     title: 'Bio',
     sectionLabel: 'bio',
-    navLabel: 'BIO',
-    navTo: 'bio'
+    navLabel: 'BIO'
   },
-  LINKS: {
-    title: 'Links',
-    sectionLabel: 'links',
-    navLabel: 'LINKS',
-    navTo: 'links'
+  SKILLS: {
+    title: 'Skills',
+    sectionLabel: 'skills',
+    navLabel: 'SKILLS'
   },
-  CONTACT: {
-    title: 'Contact',
-    sectionLabel: 'contact',
-    navLabel: 'CONTACT',
-    navTo: 'contact'
+  ARTICLES: {
+    title: 'Articles',
+    sectionLabel: 'articles',
+    navLabel: 'ARTICLES'
+  },
+  WORKS: {
+    title: 'Works',
+    sectionLabel: 'works',
+    navLabel: 'WORKS'
   }
 }
 

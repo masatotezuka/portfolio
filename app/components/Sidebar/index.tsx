@@ -16,7 +16,7 @@ export const Sidebar: FC = () => {
       <nav>
         <ul className={styles.navigation}>
           {Object.entries(SECTION_LIST).map(([key, value]) => {
-            return <NavButton key={key} to={value.navTo} label={value.navLabel} />
+            return <NavButton key={key} to={value.sectionLabel} label={value.navLabel} />
           })}
         </ul>
       </nav>
