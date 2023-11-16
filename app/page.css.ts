@@ -10,16 +10,16 @@ export const sidebarContainer = style({
   height: '100vh',
   backgroundColor: '#f7f7f7',
   position: 'fixed',
-  width: '20rem',
+  width: '25%',
   overflowY: 'auto',
-  top: 0
+  top: 0,
+  left: 0
 })
 
 export const mainContainer = style({
-  marginLeft: '20rem',
+  marginLeft: '25%',
   width: '100%',
-  backgroundColor: '#B0E0E6',
-  padding: '48px',
+  padding: '48px 0px',
   display: 'flex',
   flexDirection: 'column'
 })

@@ -5,7 +5,7 @@ export const container = style({
   flexDirection: 'column',
   alignItems: 'start',
   margin: '0 auto',
-  padding: '120px 50px'
+  padding: '120px 80px'
 })
 
 export const profile = style({

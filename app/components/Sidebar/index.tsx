@@ -2,7 +2,7 @@
 import { FC } from 'react'
 import * as styles from './sidebar.css'
 import { NavButton } from './NavButton'
-import { NAV_ITEMS } from '@/constans'
+import { SECTION_LIST } from '@/constans'
 
 export const Sidebar: FC = () => {
   return (
@@ -15,8 +15,8 @@ export const Sidebar: FC = () => {
       </div>
       <nav>
         <ul className={styles.navigation}>
-          {NAV_ITEMS.map((item, index) => {
-            return <NavButton key={index} to={item.to} label={item.label} />
+          {Object.entries(SECTION_LIST).map(([key, value]) => {
+            return <NavButton key={key} to={value.sectionLabel} label={value.navLabel} />
           })}
         </ul>
       </nav>

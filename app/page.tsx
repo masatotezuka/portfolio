@@ -2,6 +2,9 @@ import { Sidebar } from './components/Sidebar'
 import * as styles from './page.css'
 import { Section } from './components/Section'
 import { About } from './components/About'
+import { Skills } from './components/Skills'
+import { SECTION_LIST } from '@/constans'
+import { Bio } from './components/Bio'
 
 export default function Home() {
   return (
@@ -10,20 +13,32 @@ export default function Home() {
         <Sidebar />
       </div>
       <div className={styles.mainContainer}>
-        <Section title='About' sectionLabel='about'>
+        <Section
+          title={SECTION_LIST['ABOUT'].title}
+          sectionLabel={SECTION_LIST['ABOUT'].sectionLabel}
+        >
           <About />
         </Section>
-        <Section title='Skills' sectionLabel='skills'>
-          <p>skill</p>
+        <Section title={SECTION_LIST['BIO'].title} sectionLabel={SECTION_LIST['BIO'].sectionLabel}>
+          <Bio />
         </Section>
-        <Section title='Education' sectionLabel='education'>
-          <p>education</p>
+        <Section
+          title={SECTION_LIST['SKILLS'].title}
+          sectionLabel={SECTION_LIST['SKILLS'].sectionLabel}
+        >
+          <Skills />
         </Section>
-        <Section title='Links' sectionLabel='links'>
-          <p>Links</p>
+        <Section
+          title={SECTION_LIST['ARTICLES'].title}
+          sectionLabel={SECTION_LIST['ARTICLES'].sectionLabel}
+        >
+          <p>coming soon...</p>
         </Section>
-        <Section title='Contact' sectionLabel='contact'>
-          <p>contact</p>
+        <Section
+          title={SECTION_LIST['WORKS'].title}
+          sectionLabel={SECTION_LIST['WORKS'].sectionLabel}
+        >
+          <p>Coming soon...</p>
         </Section>
       </div>
     </div>
