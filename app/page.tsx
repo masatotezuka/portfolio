@@ -4,6 +4,7 @@ import { Section } from './components/Section'
 import { About } from './components/About'
 import { Skills } from './components/Skills'
 import { SECTION_LIST } from '@/constans'
+import { Bio } from './components/Bio'
 
 export default function Home() {
   return (
@@ -25,7 +26,7 @@ export default function Home() {
           <Skills />
         </Section>
         <Section title={SECTION_LIST['BIO'].title} sectionLabel={SECTION_LIST['BIO'].sectionLabel}>
-          <p>education</p>
+          <Bio />
         </Section>
         <Section
           title={SECTION_LIST['LINKS'].title}

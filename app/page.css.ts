@@ -18,7 +18,7 @@ export const sidebarContainer = style({
 export const mainContainer = style({
   marginLeft: '20rem',
   width: '100%',
-  backgroundColor: '#B0E0E6',
+  // backgroundColor: '#B0E0E6',
   padding: '48px',
   display: 'flex',
   flexDirection: 'column'
