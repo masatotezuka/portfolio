@@ -22,7 +22,8 @@ export const introductionContainer = style({
   flexBasis: '60%',
   display: 'flex',
   flexDirection: 'column',
-  justifyContent: 'center'
+  justifyContent: 'center',
+  overflowWrap: 'break-word'
 })
 
 export const image = style({

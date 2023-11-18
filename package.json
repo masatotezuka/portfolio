@@ -10,6 +10,7 @@
     "format": "prettier --write './**/*.{tsx,ts,json,js,jsx}'"
   },
   "dependencies": {
+    "@radix-ui/react-tabs": "^1.0.4",
     "@types/node": "20.6.5",
     "@types/react": "18.2.22",
     "@types/react-dom": "18.2.7",

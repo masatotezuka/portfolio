@@ -5,6 +5,7 @@ import { About } from './components/About'
 import { Skills } from './components/Skills'
 import { SECTION_LIST } from '@/constans'
 import { Bio } from './components/Bio'
+import { Blog } from './components/Blog'
 
 export default function Home() {
   return (
@@ -29,10 +30,10 @@ export default function Home() {
           <Skills />
         </Section>
         <Section
-          title={SECTION_LIST['ARTICLES'].title}
-          sectionLabel={SECTION_LIST['ARTICLES'].sectionLabel}
+          title={SECTION_LIST['BLOG'].title}
+          sectionLabel={SECTION_LIST['BLOG'].sectionLabel}
         >
-          <p>coming soon...</p>
+          <Blog />
         </Section>
         <Section
           title={SECTION_LIST['WORKS'].title}
