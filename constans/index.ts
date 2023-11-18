@@ -14,10 +14,10 @@ export const SECTION_LIST = {
     sectionLabel: 'skills',
     navLabel: 'SKILLS'
   },
-  ARTICLES: {
-    title: 'Articles',
-    sectionLabel: 'articles',
-    navLabel: 'ARTICLES'
+  BLOG: {
+    title: 'Blog',
+    sectionLabel: 'blog',
+    navLabel: 'BLOG'
   },
   WORKS: {
     title: 'Works',
