@@ -1,8 +1,9 @@
 import { style } from '@vanilla-extract/css'
 
 export const container = style({
-  boxShadow: '2px 4px 8px 0px #9E9E9E',
-  padding: '70px 0px'
+  boxShadow: '0px 4px 10px 0px #9E9E9E',
+  padding: '70px 0px',
+  borderRadius: '10px'
 })
 
 export const linkListContainer = style({

@@ -5,6 +5,6 @@ export const container = style({
 })
 
 export const title = style({
-  margin: '60px 0px',
+  margin: '40px 0px',
   fontSize: '40px'
 })

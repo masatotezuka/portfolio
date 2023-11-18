@@ -15,14 +15,14 @@ export const profile = style({
 })
 
 export const name = style({
-  fontSize: '20px',
+  fontSize: '24px',
   color: '#008B8B',
   fontWeight: 'bold',
   textDecoration: 'none'
 })
 
 export const job = style({
-  fontSize: '16px',
+  fontSize: '20px',
   color: '#008B8B',
   marginBottom: '40px'
 })
