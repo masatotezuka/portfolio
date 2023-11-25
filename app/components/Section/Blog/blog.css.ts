@@ -36,12 +36,16 @@ export const tabTrigger = style({
     opacity: '0.5',
     cursor: 'pointer'
   },
-
   selectors: {
     '&[data-state="active"]': {
       color: '#008B8B',
       borderBottom: '1px solid #008B8B',
       boxShadow: 'inset 0 -1px 0 0 currentColor, 0 1px 0 0 currentColor'
+    }
+  },
+  '@media': {
+    'screen and (max-width: 768px)': {
+      fontSize: '16px'
     }
   }
 })

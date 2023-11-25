@@ -9,7 +9,7 @@ export const container = style({
   justifyContent: 'space-between',
   '@media': {
     'screen and (max-width: 768px)': {
-      padding: '10px 0px'
+      padding: '10px 10px'
     }
   }
 })

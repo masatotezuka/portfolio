@@ -3,7 +3,12 @@ import { style } from '@vanilla-extract/css'
 export const container = style({
   boxShadow: '0px 4px 10px 0px #9E9E9E',
   padding: '70px 0px',
-  borderRadius: '10px'
+  borderRadius: '10px',
+  '@media': {
+    'screen and (max-width: 768px)': {
+      padding: '35px 0px'
+    }
+  }
 })
 
 export const linkListContainer = style({
@@ -13,7 +18,14 @@ export const linkListContainer = style({
   alignItems: 'center',
   justifyContent: 'center',
   gridTemplateColumns: 'repeat(5,50px)',
-  gridTemplateRows: 'repeat(1, 50px)'
+  gridTemplateRows: 'repeat(1, 50px)',
+  '@media': {
+    'screen and (max-width: 768px)': {
+      gridTemplateColumns: 'repeat(5,30px)',
+      gridTemplateRows: 'repeat(1, 30px)',
+      gap: '25px'
+    }
+  }
 })
 
 export const imageContainer = style({
@@ -21,6 +33,12 @@ export const imageContainer = style({
   height: '50px',
   ':hover': {
     opacity: '0.7'
+  },
+  '@media': {
+    'screen and (max-width: 768px)': {
+      width: '30px',
+      height: '30px'
+    }
   }
 })
 
