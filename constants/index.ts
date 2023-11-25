@@ -106,3 +106,11 @@ export const LINK_LIST = [
     url: 'https://www.facebook.com/profile.php?id=100022391745587'
   }
 ]
+
+export const ZENN_FEED_URL = 'https://zenn.dev/masatotezuka/feed'
+export const NOTE_FEED_URL = 'https://note.com/mst_tez/rss'
+export const ZENN_FAVICON_URL = 'https://zenn.dev/images/logo-transparent.png'
+export const NOTE_FAVICON_URL =
+  'https://assets.st-note.com/poc-image/manual/note-common-images/production/svg/production.ico'
+export const NOTION_FAVICON_URL = 'https://www.notion.so/images/favicon.ico'
+export const NOTION_API_URL = `https://api.notion.com/v1/databases/${process.env.NOTION_DATABASE_ID}/query`

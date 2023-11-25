@@ -2,7 +2,7 @@
 import { FC } from 'react'
 import * as styles from './sidebar.css'
 import { NavButton } from './NavButton'
-import { SECTION_LIST } from '@/constans'
+import { SECTION_LIST } from '@/constants'
 
 export const Sidebar: FC = () => {
   return (
