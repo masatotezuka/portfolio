@@ -3,14 +3,7 @@ import { style } from '@vanilla-extract/css'
 export const container = style({
   display: 'flex',
   margin: '0 auto',
-  maxWidth: '1080px',
-  '@media': {
-    'screen and (max-width: 768px)': {
-      width: '100%',
-      display: 'flex',
-      flexDirection: 'column'
-    }
-  }
+  maxWidth: '1080px'
 })
 
 export const sidebarContainer = style({
@@ -38,6 +31,10 @@ export const mainContainer = style({
   flexDirection: 'column',
   '@media': {
     'screen and (max-width: 768px)': {
+      width: '100%',
+      display: 'flex',
+      flexDirection: 'column',
+      padding: '0px 15px',
       margin: '0 auto'
     }
   }
