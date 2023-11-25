@@ -6,7 +6,9 @@ export const container = style({
   maxWidth: '1080px',
   '@media': {
     'screen and (max-width: 768px)': {
-      width: '100%'
+      width: '100%',
+      display: 'flex',
+      flexDirection: 'column'
     }
   }
 })
@@ -19,6 +21,13 @@ export const sidebarContainer = style({
   overflowY: 'auto',
   top: 0,
   left: 0
+})
+
+export const mobileHeaderContainer = style({
+  backgroundColor: '#f7f7f7',
+  position: 'fixed',
+  width: '100%',
+  zIndex: 1
 })
 
 export const mainContainer = style({
