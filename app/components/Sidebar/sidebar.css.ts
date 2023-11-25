@@ -3,15 +3,13 @@ import { style } from '@vanilla-extract/css'
 export const container = style({
   display: 'flex',
   flexDirection: 'column',
-  alignItems: 'start',
   margin: '0 auto',
   padding: '120px 80px'
 })
 
 export const profile = style({
   display: 'flex',
-  flexDirection: 'column',
-  alignItems: 'start'
+  flexDirection: 'column'
 })
 
 export const name = style({
@@ -31,7 +29,6 @@ export const navigation = style({
   listStyle: 'none',
   display: 'flex',
   flexDirection: 'column',
-  alignItems: 'start',
   padding: 0,
   rowGap: '24px'
 })

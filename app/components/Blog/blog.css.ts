@@ -3,11 +3,12 @@ import { style } from '@vanilla-extract/css'
 export const root = style({
   display: 'flex',
   flexDirection: 'column',
-  width: '100%'
+  width: '900px'
 })
 
 export const tabList = style({
   display: 'flex',
+  width: '900px',
   borderBottom: '1px solid gray'
 })
 
@@ -47,7 +48,6 @@ export const blogCardLinkContainers = style({
 
 export const blogCardContainer = style({
   backgroundColor: 'white',
-
   boxShadow: '0 4px 4px rgba(0, 0, 0, 0.1)',
   border: '1px solid #eaeaea',
   borderRadius: '10px',

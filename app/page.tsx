@@ -3,11 +3,13 @@ import * as styles from './page.css'
 import { Section } from './components/Section'
 import { About } from './components/About'
 import { Skills } from './components/Skills'
-import { SECTION_LIST } from '@/constans'
+import { SECTION_LIST } from '@/constants'
 import { Bio } from './components/Bio'
 import { Blog } from './components/Blog'
+import { useBlogData } from './hooks/useBlogData'
 
-export default function Home() {
+export default async function Home() {
+  const { blogData } = await useBlogData()
   return (
     <div className={styles.container}>
       <div className={styles.sidebarContainer}>
@@ -33,7 +35,7 @@ export default function Home() {
           title={SECTION_LIST['BLOG'].title}
           sectionLabel={SECTION_LIST['BLOG'].sectionLabel}
         >
-          <Blog />
+          <Blog blogData={blogData} />
         </Section>
         <Section
           title={SECTION_LIST['WORKS'].title}

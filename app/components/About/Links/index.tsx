@@ -1,7 +1,7 @@
 'use client'
 import { FC } from 'react'
 import Image from 'next/image'
-import { LINK_LIST } from '@/constans'
+import { LINK_LIST } from '@/constants'
 import * as styles from './link.css'
 
 export const Links: FC = () => {

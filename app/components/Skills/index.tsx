@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { FC } from 'react'
 import * as styles from './skills.css'
-import { SKILL_LIST } from '@/constans'
+import { SKILL_LIST } from '@/constants'
 
 export const Skills: FC = () => {
   return (
