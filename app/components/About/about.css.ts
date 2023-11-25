@@ -9,7 +9,12 @@ export const wrapper = style({
 export const container = style({
   display: 'flex',
   gap: '28px',
-  flexGrow: 1
+  flexGrow: 1,
+  '@media': {
+    'screen and (max-width: 768px)': {
+      flexDirection: 'column'
+    }
+  }
 })
 
 export const imageContainer = style({
@@ -31,5 +36,11 @@ export const image = style({
   height: 'auto',
   borderRadius: '50%',
   aspectRatio: '1/1',
-  objectFit: 'cover'
+  objectFit: 'cover',
+  '@media': {
+    'screen and (max-width: 768px)': {
+      width: '50%',
+      height: 'auto'
+    }
+  }
 })

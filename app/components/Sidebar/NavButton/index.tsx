@@ -10,7 +10,7 @@ type Props = {
 export const NavButton: FC<Props> = ({ to, label }) => {
   return (
     <li className={styles.list}>
-      <Scroll to={to} smooth={true} duration={500}>
+      <Scroll to={to} smooth={true} duration={500} spy={true}>
         {label}
       </Scroll>
     </li>

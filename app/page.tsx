@@ -41,7 +41,9 @@ export default async function Home() {
           title={SECTION_LIST['WORKS'].title}
           sectionLabel={SECTION_LIST['WORKS'].sectionLabel}
         >
-          <p>Coming soon...</p>
+          <div className={styles.workContainer}>
+            <p>Coming soon...</p>
+          </div>
         </Section>
       </div>
     </div>

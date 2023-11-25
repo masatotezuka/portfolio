@@ -1,10 +1,12 @@
 import { style } from '@vanilla-extract/css'
 
 export const container = style({
-  height: '100vh'
+  display: 'flex',
+  flexDirection: 'column',
+  gap: '60px'
 })
 
 export const title = style({
-  margin: '40px 0px',
+  margin: '90px 0px 0px 0px',
   fontSize: '40px'
 })

@@ -1,3 +1,4 @@
+'usee client'
 import { FC } from 'react'
 import * as styles from './section.css'
 

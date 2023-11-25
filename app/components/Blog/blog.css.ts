@@ -3,13 +3,23 @@ import { style } from '@vanilla-extract/css'
 export const root = style({
   display: 'flex',
   flexDirection: 'column',
-  width: '900px'
+  width: '900px',
+  '@media': {
+    'screen and (max-width: 768px)': {
+      width: '100%'
+    }
+  }
 })
 
 export const tabList = style({
   display: 'flex',
   width: '900px',
-  borderBottom: '1px solid gray'
+  borderBottom: '1px solid gray',
+  '@media': {
+    'screen and (max-width: 768px)': {
+      width: '100%'
+    }
+  }
 })
 
 export const tabTrigger = style({
