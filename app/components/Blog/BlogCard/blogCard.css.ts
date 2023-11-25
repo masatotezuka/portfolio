@@ -5,18 +5,29 @@ export const container = style({
   textDecoration: 'none',
   color: 'black',
   display: 'flex',
-  width: '100%'
+  width: '100%',
+  justifyContent: 'space-between'
 })
 
 export const blogContent = style({
   display: 'flex',
+  overflow: 'hidden',
   flexDirection: 'column',
   justifyContent: 'center',
   gap: '8px',
-  flex: 1
+  flexGrow: 1
+  // flex: 1
 })
+// export const titleContainer = style({
+//   overflow: 'hidden',
+//   textOverflow: 'ellipsis',
+//   whiteSpace: 'nowrap'
+// })
 
 export const title = style({
+  overflow: 'hidden',
+  textOverflow: 'ellipsis',
+  whiteSpace: 'nowrap',
   fontSize: '20px',
   fontWeight: 'bold',
   margin: '0px'
@@ -39,6 +50,11 @@ export const siteContainer = style({
   width: '16px'
 })
 
+export const imageContainer = style({
+  flexShrink: 0,
+  flexBasis: '300px'
+})
+
 export const image = style({
   objectFit: 'contain',
   width: '100%',
@@ -47,6 +63,7 @@ export const image = style({
 
 export const thumbnail = style({
   objectFit: 'contain',
+  aspectRatio: '1',
   width: '100%',
   height: '100%',
   borderRadius: '10px'
