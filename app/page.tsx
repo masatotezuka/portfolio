@@ -13,9 +13,9 @@ export default async function Home() {
   const { blogData } = await useBlogData()
   return (
     <div className={styles.container}>
-      {/* <div className={styles.sidebarContainer}>
+      <div className={styles.sidebarContainer}>
         <Sidebar />
-      </div> */}
+      </div>
       <div className={styles.mobileHeaderContainer}>
         <MobileHeader />
       </div>

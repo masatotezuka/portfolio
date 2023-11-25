@@ -13,14 +13,24 @@ export const sidebarContainer = style({
   width: '25%',
   overflowY: 'auto',
   top: 0,
-  left: 0
+  left: 0,
+  '@media': {
+    'screen and (max-width: 768px)': {
+      display: 'none'
+    }
+  }
 })
 
 export const mobileHeaderContainer = style({
   backgroundColor: '#f7f7f7',
   position: 'fixed',
   width: '100%',
-  zIndex: 1
+  zIndex: 1,
+  '@media': {
+    'screen and (min-width: 768px)': {
+      display: 'none'
+    }
+  }
 })
 
 export const mainContainer = style({
