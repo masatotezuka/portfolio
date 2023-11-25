@@ -3,7 +3,8 @@ import { style } from '@vanilla-extract/css'
 export const container = style({
   boxShadow: '0px 4px 10px 0px #9E9E9E',
   padding: '70px 0px',
-  borderRadius: '10px'
+  borderRadius: '10px',
+  marginBottom: '10px'
 })
 
 export const imageContainer = style({

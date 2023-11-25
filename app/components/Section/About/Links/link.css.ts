@@ -4,6 +4,7 @@ export const container = style({
   boxShadow: '0px 4px 10px 0px #9E9E9E',
   padding: '70px 0px',
   borderRadius: '10px',
+  marginBottom: '10px',
   '@media': {
     'screen and (max-width: 768px)': {
       padding: '35px 0px'
