@@ -1,3 +1,5 @@
+import * as dotenv from 'dotenv'
+dotenv.config()
 export const SECTION_LIST = {
   ABOUT: {
     title: 'About',
