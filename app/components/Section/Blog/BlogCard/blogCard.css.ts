@@ -6,7 +6,12 @@ export const container = style({
   color: 'black',
   display: 'flex',
   width: '100%',
-  justifyContent: 'space-between'
+  justifyContent: 'space-between',
+  '@media': {
+    'screen and (max-width: 768px)': {
+      padding: '10px 0px'
+    }
+  }
 })
 
 export const blogContent = style({
@@ -15,14 +20,14 @@ export const blogContent = style({
   flexDirection: 'column',
   justifyContent: 'center',
   gap: '8px',
-  flexGrow: 1
-  // flex: 1
+  flexGrow: 1,
+  '@media': {
+    'screen and (max-width: 768px)': {
+      padding: '0px 10px',
+      flexShrink: 1
+    }
+  }
 })
-// export const titleContainer = style({
-//   overflow: 'hidden',
-//   textOverflow: 'ellipsis',
-//   whiteSpace: 'nowrap'
-// })
 
 export const title = style({
   overflow: 'hidden',
@@ -30,16 +35,31 @@ export const title = style({
   whiteSpace: 'nowrap',
   fontSize: '20px',
   fontWeight: 'bold',
-  margin: '0px'
+  margin: '0px',
+  '@media': {
+    'screen and (max-width: 768px)': {
+      fontSize: '16px'
+    }
+  }
 })
 
 export const publishedAt = style({
   fontSize: '16px',
-  margin: '0px'
+  margin: '0px',
+  '@media': {
+    'screen and (max-width: 768px)': {
+      fontSize: '12px'
+    }
+  }
 })
 
 export const site = style({
-  fontSize: '16px'
+  fontSize: '16px',
+  '@media': {
+    'screen and (max-width: 768px)': {
+      fontSize: '12px'
+    }
+  }
 })
 
 export const siteContainer = style({
@@ -52,7 +72,12 @@ export const siteContainer = style({
 
 export const imageContainer = style({
   flexShrink: 0,
-  flexBasis: '300px'
+  flexBasis: '300px',
+  '@media': {
+    'screen and (max-width: 768px)': {
+      display: 'none'
+    }
+  }
 })
 
 export const image = style({
