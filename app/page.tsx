@@ -1,11 +1,12 @@
 import { Sidebar } from './components/Sidebar'
+import { MobileHeader } from './components/MobileHeader'
 import * as styles from './page.css'
 import { Section } from './components/Section'
-import { About } from './components/About'
-import { Skills } from './components/Skills'
+import { About } from './components/Section/About'
+import { Skills } from './components/Section/Skills'
 import { SECTION_LIST } from '@/constants'
-import { Bio } from './components/Bio'
-import { Blog } from './components/Blog'
+import { Bio } from './components/Section/Bio'
+import { Blog } from './components/Section/Blog'
 import { useBlogData } from './hooks/useBlogData'
 
 export default async function Home() {
@@ -14,6 +15,9 @@ export default async function Home() {
     <div className={styles.container}>
       <div className={styles.sidebarContainer}>
         <Sidebar />
+      </div>
+      <div className={styles.mobileHeaderContainer}>
+        <MobileHeader />
       </div>
       <div className={styles.mainContainer}>
         <Section
@@ -41,7 +45,9 @@ export default async function Home() {
           title={SECTION_LIST['WORKS'].title}
           sectionLabel={SECTION_LIST['WORKS'].sectionLabel}
         >
-          <p>Coming soon...</p>
+          <div className={styles.workContainer}>
+            <p>Coming soon...</p>
+          </div>
         </Section>
       </div>
     </div>

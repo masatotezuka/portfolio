@@ -23,9 +23,7 @@ export const BlogCard: FC<BlogCardProps> = ({
   return (
     <Link className={styles.container} href={url} target='_blank' rel='noopener noreferrer'>
       <div className={styles.blogContent}>
-        {/* <div className={styles.titleContainer}> */}
         <p className={styles.title}>{title}</p>
-        {/* </div> */}
         <p className={styles.publishedAt}>{publishedAt}</p>
         <div className={styles.siteContainer}>
           <Image src={favicon} alt={site} width={100} height={100} className={styles.image} />

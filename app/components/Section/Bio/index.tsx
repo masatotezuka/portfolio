@@ -2,7 +2,7 @@ import React, { FC } from 'react'
 import * as styles from './bio.css'
 export const Bio: FC = () => {
   return (
-    <>
+    <div>
       <div className={styles.timelineContainer}>
         <div className={styles.timeline}>
           <p className={styles.timelineContentTitle}>フリーランス</p>
@@ -48,6 +48,6 @@ export const Bio: FC = () => {
           </p>
         </div>
       </div>
-    </>
+    </div>
   )
 }

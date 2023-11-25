@@ -17,6 +17,11 @@ export const timeline = style({
     left: '-7px',
     top: '0px',
     borderRadius: '100%'
+  },
+  '@media': {
+    'screen and (max-width: 768px)': {
+      paddingLeft: '30px'
+    }
   }
 })
 
@@ -39,17 +44,34 @@ export const timelineContentTitle = style({
   fontSize: '24px',
   color: '#008B8B',
   fontWeight: 'bold',
-  margin: '0px'
+  margin: '0px',
+  '@media': {
+    'screen and (max-width: 768px)': {
+      fontSize: '20px'
+    }
+  }
 })
 
 export const timelineContentDate = style({
   fontSize: '16px',
   color: '#008B8B',
-  margin: '0px'
+  margin: '0px',
+  '@media': {
+    'screen and (max-width: 768px)': {
+      fontSize: '14px'
+    }
+  }
 })
 
 export const timelineContentDescription = style({
   fontSize: '16px',
   margin: '10px 0px',
-  lineHeight: '2.0'
+  lineHeight: '2.0',
+  overflowWrap: 'break-word',
+  '@media': {
+    'screen and (max-width: 768px)': {
+      fontSize: '14px',
+      lineHeight: '1.5'
+    }
+  }
 })

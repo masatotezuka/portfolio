@@ -3,13 +3,23 @@ import { style } from '@vanilla-extract/css'
 export const root = style({
   display: 'flex',
   flexDirection: 'column',
-  width: '900px'
+  width: '900px',
+  '@media': {
+    'screen and (max-width: 768px)': {
+      width: '100%'
+    }
+  }
 })
 
 export const tabList = style({
   display: 'flex',
   width: '900px',
-  borderBottom: '1px solid gray'
+  borderBottom: '1px solid gray',
+  '@media': {
+    'screen and (max-width: 768px)': {
+      width: '100%'
+    }
+  }
 })
 
 export const tabTrigger = style({
@@ -26,12 +36,16 @@ export const tabTrigger = style({
     opacity: '0.5',
     cursor: 'pointer'
   },
-
   selectors: {
     '&[data-state="active"]': {
       color: '#008B8B',
       borderBottom: '1px solid #008B8B',
       boxShadow: 'inset 0 -1px 0 0 currentColor, 0 1px 0 0 currentColor'
+    }
+  },
+  '@media': {
+    'screen and (max-width: 768px)': {
+      fontSize: '16px'
     }
   }
 })

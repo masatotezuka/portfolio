@@ -6,5 +6,10 @@ export const list = style({
     cursor: 'pointer',
     color: '#008B8B',
     textDecoration: 'underline'
+  },
+  '@media': {
+    'screen and (max-width: 768px)': {
+      fontSize: '16px'
+    }
   }
 })
