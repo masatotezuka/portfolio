@@ -1,15 +1,18 @@
+import { vars } from '@/styles/vars.css'
 import { style } from '@vanilla-extract/css'
 
-export const list = style({
-  fontSize: '20px',
+export const text = style({
+  fontSize: vars.fontSize.l,
+  width: 'fit-content',
+  margin: '0px',
   ':hover': {
     cursor: 'pointer',
-    color: '#008B8B',
+    color: vars.color.primary,
     textDecoration: 'underline'
   },
   '@media': {
     'screen and (max-width: 768px)': {
-      fontSize: '16px'
+      fontSize: vars.fontSize.base
     }
   }
 })

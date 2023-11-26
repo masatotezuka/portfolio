@@ -2,15 +2,16 @@ import React, { FC } from 'react'
 import * as styles from './bio.css'
 export const Bio: FC = () => {
   return (
+    // TODO: リファクタリング
     <div>
       <div className={styles.timelineContainer}>
         <div className={styles.timeline}>
           <p className={styles.timelineContentTitle}>フリーランス</p>
-          <p className={styles.timelineContentDate}>2023.4〜2023.12</p>
+          <p className={styles.timelineContentDate}>2023.4〜</p>
           <p className={styles.timelineContentDescription}>
-            ・ECコンサル事業のDX支援サービス・人材紹介サービス・製造業のDX推進サービスの新規機能開発{' '}
+            ・ECコンサル事業のDX支援サービス・人材紹介サービス・製造業のDX推進サービスの新規機能開発
             <br />
-            ・担当領域はバックエンド・フロントエンド
+            ・担当領域はバックエンドとフロントエンド
             <br />
             ・技術スタック: TypeScript / Express / Next.js / MySQL / Docker
           </p>
@@ -31,10 +32,12 @@ export const Bio: FC = () => {
           <p className={styles.timelineContentTitle}>株式会社バックテック(インターン)</p>
           <p className={styles.timelineContentDate}>2020.3〜2023.3</p>
           <p className={styles.timelineContentDescription}>
-            ・主にRとBIツール(Redash)使用したデータ分析業務に従事
+            ・RとBIツール（Redash）を利用したデータ分析業務に主に従事
             <br />
-            ・ユーザーからの問い合わせ対応をはじめとするカスタマーサポートも経験 <br />
-            ・Node.js(Express), TypeScript(Next.js)によるWebアプリケーションの開発（2023.9〜2023.3）
+            ・ユーザーからの問い合わせに対するカスタマーサポートを担当 <br />
+            ・要件定義、設計、開発、テスト、リリースまでの一連の業務を経験（2023.9〜2023.3）
+            <br />
+            ・技術スタック: TypeScript / Express / React / PostgreSQL
           </p>
         </div>
       </div>

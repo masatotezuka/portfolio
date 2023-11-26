@@ -1,3 +1,4 @@
+import { vars } from '@/styles/vars.css'
 import { style } from '@vanilla-extract/css'
 
 export const container = style({
@@ -33,31 +34,31 @@ export const title = style({
   overflow: 'hidden',
   textOverflow: 'ellipsis',
   whiteSpace: 'nowrap',
-  fontSize: '20px',
+  fontSize: vars.fontSize['l'],
   fontWeight: 'bold',
   margin: '0px',
   '@media': {
     'screen and (max-width: 768px)': {
-      fontSize: '16px'
+      fontSize: vars.fontSize.base
     }
   }
 })
 
 export const publishedAt = style({
-  fontSize: '16px',
+  fontSize: vars.fontSize.base,
   margin: '0px',
   '@media': {
     'screen and (max-width: 768px)': {
-      fontSize: '12px'
+      fontSize: vars.fontSize.s
     }
   }
 })
 
 export const site = style({
-  fontSize: '16px',
+  fontSize: vars.fontSize.base,
   '@media': {
     'screen and (max-width: 768px)': {
-      fontSize: '12px'
+      fontSize: vars.fontSize.s
     }
   }
 })

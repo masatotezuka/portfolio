@@ -1,3 +1,4 @@
+import { vars } from '@/styles/vars.css'
 import { style } from '@vanilla-extract/css'
 
 export const container = style({
@@ -8,7 +9,7 @@ export const container = style({
 
 export const sidebarContainer = style({
   height: '100vh',
-  backgroundColor: '#f7f7f7',
+  backgroundColor: vars.color.secondary,
   position: 'fixed',
   width: '25%',
   overflowY: 'auto',

@@ -10,6 +10,8 @@ import { Blog } from './components/Section/Blog'
 import { useBlogData } from './hooks/useBlogData'
 
 export default async function Home() {
+  // console.log(styles.pink)
+
   const { blogData } = await useBlogData()
   return (
     <div className={styles.container}>

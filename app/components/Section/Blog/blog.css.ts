@@ -1,3 +1,4 @@
+import { vars } from '@/styles/vars.css'
 import { style } from '@vanilla-extract/css'
 
 export const root = style({
@@ -31,6 +32,7 @@ export const tabTrigger = style({
   fontSize: '20px',
   backgroundColor: 'white',
   border: 'none',
+  color: 'black',
   fontFamily: 'inherit',
   ':hover': {
     opacity: '0.5',
@@ -38,7 +40,7 @@ export const tabTrigger = style({
   },
   selectors: {
     '&[data-state="active"]': {
-      color: '#008B8B',
+      color: vars.color.primary,
       borderBottom: '1px solid #008B8B',
       boxShadow: 'inset 0 -1px 0 0 currentColor, 0 1px 0 0 currentColor'
     }
@@ -57,7 +59,12 @@ export const blogCardLinkContainers = style({
   flexDirection: 'column',
   gap: '40px',
   height: '70vh',
-  overflowY: 'scroll'
+  overflowY: 'scroll',
+  '@media': {
+    'screen and (max-width: 768px)': {
+      height: '60vh'
+    }
+  }
 })
 
 export const blogCardContainer = style({

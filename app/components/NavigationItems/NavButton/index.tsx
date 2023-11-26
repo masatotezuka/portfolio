@@ -10,10 +10,12 @@ type Props = {
 
 export const NavButton: FC<Props> = ({ to, label, toggleNavigationBarOpen }) => {
   return (
-    <li className={styles.list}>
-      <Scroll to={to} smooth={true} duration={500} spy={true} onClick={toggleNavigationBarOpen}>
-        {label}
-      </Scroll>
+    <li>
+      <p className={styles.text}>
+        <Scroll to={to} smooth={true} duration={500} spy={true} onClick={toggleNavigationBarOpen}>
+          {label}
+        </Scroll>
+      </p>
     </li>
   )
 }

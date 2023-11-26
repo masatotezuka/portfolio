@@ -1,3 +1,4 @@
+import { vars } from '@/styles/vars.css'
 import { style } from '@vanilla-extract/css'
 
 export const timelineContainer = style({
@@ -12,7 +13,7 @@ export const timeline = style({
     content: '',
     width: '12px',
     height: '12px',
-    background: '#008B8B',
+    background: vars.color.primary,
     position: 'absolute',
     left: '-7px',
     top: '0px',
@@ -32,7 +33,7 @@ export const timelineContent = style({
 })
 
 export const introductionContainer = style({
-  fontSize: '16px',
+  fontSize: vars.fontSize.base,
   lineHeight: '1.5',
   flexBasis: '60%',
   display: 'flex',
@@ -41,20 +42,20 @@ export const introductionContainer = style({
 })
 
 export const timelineContentTitle = style({
-  fontSize: '24px',
-  color: '#008B8B',
+  fontSize: vars.fontSize['2xl'],
+  color: vars.color.primary,
   fontWeight: 'bold',
   margin: '0px',
   '@media': {
     'screen and (max-width: 768px)': {
-      fontSize: '20px'
+      fontSize: vars.fontSize.l
     }
   }
 })
 
 export const timelineContentDate = style({
-  fontSize: '16px',
-  color: '#008B8B',
+  fontSize: vars.fontSize.base,
+  color: vars.color.primary,
   margin: '0px',
   '@media': {
     'screen and (max-width: 768px)': {
@@ -64,7 +65,7 @@ export const timelineContentDate = style({
 })
 
 export const timelineContentDescription = style({
-  fontSize: '16px',
+  fontSize: vars.fontSize.base,
   margin: '10px 0px',
   lineHeight: '2.0',
   overflowWrap: 'break-word',
