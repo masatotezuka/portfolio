@@ -32,6 +32,7 @@ export const tabTrigger = style({
   fontSize: '20px',
   backgroundColor: 'white',
   border: 'none',
+  color: 'black',
   fontFamily: 'inherit',
   ':hover': {
     opacity: '0.5',
@@ -58,7 +59,12 @@ export const blogCardLinkContainers = style({
   flexDirection: 'column',
   gap: '40px',
   height: '70vh',
-  overflowY: 'scroll'
+  overflowY: 'scroll',
+  '@media': {
+    'screen and (max-width: 768px)': {
+      height: '60vh'
+    }
+  }
 })
 
 export const blogCardContainer = style({

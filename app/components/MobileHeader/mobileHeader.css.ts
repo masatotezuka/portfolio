@@ -27,3 +27,7 @@ export const button = style({
     opacity: 0.5
   }
 })
+
+export const icon = style({
+  color: vars.color.primary
+})
