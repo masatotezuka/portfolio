@@ -1,3 +1,4 @@
+import { vars } from '@/styles/vars.css'
 import { style } from '@vanilla-extract/css'
 
 export const container = style({
@@ -12,8 +13,8 @@ export const header = style({
   alignItems: 'center'
 })
 export const name = style({
-  fontSize: '20px',
-  color: '#008B8B',
+  fontSize: vars.fontSize.l,
+  color: vars.color.primary,
   fontWeight: 'bold',
   textDecoration: 'none'
 })

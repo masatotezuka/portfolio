@@ -1,3 +1,4 @@
+import { vars } from '@/styles/vars.css'
 import { style } from '@vanilla-extract/css'
 
 export const root = style({
@@ -38,7 +39,7 @@ export const tabTrigger = style({
   },
   selectors: {
     '&[data-state="active"]': {
-      color: '#008B8B',
+      color: vars.color.primary,
       borderBottom: '1px solid #008B8B',
       boxShadow: 'inset 0 -1px 0 0 currentColor, 0 1px 0 0 currentColor'
     }

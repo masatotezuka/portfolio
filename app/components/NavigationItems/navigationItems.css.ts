@@ -8,7 +8,7 @@ export const navigation = style({
   rowGap: '24px',
   '@media': {
     'screen and (max-width: 768px)': {
-      rowGap: '16px'
+      rowGap: '20px'
     }
   }
 })
