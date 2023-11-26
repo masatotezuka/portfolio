@@ -16,7 +16,7 @@ export const MobileHeader: FC = () => {
           Masato Tezuka
         </a>
         <button onClick={toggleNavigationBarOpen} className={styles.button}>
-          <HamburgerMenuIcon width={'30px'} height={'30px'} />
+          <HamburgerMenuIcon width={'30px'} height={'30px'} className={styles.icon} />
         </button>
       </div>
       {open && <NavigationItems toggleNavigationBarOpen={toggleNavigationBarOpen} />}
