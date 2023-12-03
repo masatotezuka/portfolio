@@ -11,7 +11,7 @@ export const sidebarContainer = style({
   height: '100vh',
   backgroundColor: vars.color.secondary,
   position: 'fixed',
-  width: '25%',
+  width: '25vw',
   overflowY: 'auto',
   top: 0,
   left: 0,
@@ -35,7 +35,7 @@ export const mobileHeaderContainer = style({
 })
 
 export const mainContainer = style({
-  marginLeft: '25%',
+  marginLeft: '25vw',
   width: '100%',
   display: 'flex',
   flexDirection: 'column',
