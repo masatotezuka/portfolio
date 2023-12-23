@@ -35,7 +35,7 @@ export const mobileHeaderContainer = style({
 })
 
 export const mainContainer = style({
-  marginLeft: '25vw',
+  marginLeft: '25%',
   width: '100%',
   display: 'flex',
   flexDirection: 'column',
