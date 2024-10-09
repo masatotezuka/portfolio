@@ -69,6 +69,7 @@ export const timelineContentDescription = style({
   margin: '10px 0px',
   lineHeight: '2.0',
   overflowWrap: 'break-word',
+  whiteSpace: 'pre-wrap',
   '@media': {
     'screen and (max-width: 768px)': {
       fontSize: '14px',
