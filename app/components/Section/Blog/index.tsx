@@ -46,7 +46,7 @@ export const Blog: FC<BlogProps> = ({ blogData }) => {
                 url={i.link ?? 'no link'}
                 favicon={i.favicon ?? 'no favicon'}
                 site={i.site}
-                thumbnail={i.image ?? 'no image'}
+                thumbnail={i.image}
               />
             </li>
           ))}
@@ -62,7 +62,7 @@ export const Blog: FC<BlogProps> = ({ blogData }) => {
                 url={i.link ?? 'no link'}
                 favicon={i.favicon ?? 'no favicon'}
                 site={i.site}
-                thumbnail={i.image ?? 'no image'}
+                thumbnail={i.image}
               />
             </li>
           ))}
@@ -78,7 +78,7 @@ export const Blog: FC<BlogProps> = ({ blogData }) => {
                 url={i.link ?? 'no link'}
                 favicon={i.favicon ?? 'no favicon'}
                 site={i.site}
-                thumbnail={i.image ?? 'no image'}
+                thumbnail={i.image}
               />
             </li>
           ))}
@@ -94,7 +94,7 @@ export const Blog: FC<BlogProps> = ({ blogData }) => {
                 url={i.link ?? 'no link'}
                 favicon={i.favicon ?? 'no favicon'}
                 site={i.site}
-                thumbnail={i.image ?? 'no image'}
+                thumbnail={i.image}
               />
             </li>
           ))}
