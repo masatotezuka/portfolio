@@ -3,11 +3,18 @@ import * as styles from './bio.css'
 
 const timelineData = [
   {
+    title: '株式会社Speee',
+    date: '2024.1〜',
+    description: `・不動産向け営業DXプロダクトを開発
+・バックエンドとフロントエンドの開発をしつつ、チームリーダーとしてプロジェクトリードに従事
+・技術スタック: Ruby / Ruby on Rails / GraphQL /TypeScript / React / MySQL / Docker / AWS`
+  },
+  {
     title: 'フリーランス',
-    date: '2023.4〜',
+    date: '2023.4〜2023.12',
     description: `・ECコンサル事業のDX支援サービス・人材紹介サービス・製造業のDX推進サービスの新規機能開発
 ・担当領域はバックエンドとフロントエンド
-・技術スタック: TypeScript / Express / Next.js / MySQL / Docker`
+・技術スタック: TypeScript / Express / Next.js / MySQL / Docker / AWS`
   },
   {
     title: '神戸大学院',
@@ -22,7 +29,7 @@ const timelineData = [
     description: `・RとBIツール（Redash）を利用したデータ分析業務に主に従事
 ・ユーザーからの問い合わせに対するカスタマーサポートを担当
 ・要件定義、設計、開発、テスト、リリースまでの一連の業務を経験（2023.9〜2023.3）
-・技術スタック: TypeScript / Express / React / PostgreSQL`
+・技術スタック: TypeScript / Express / React / PostgreSQL / Azure`
   },
   {
     title: '神戸大学',
