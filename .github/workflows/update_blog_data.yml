@@ -1,0 +1,42 @@
+name: Update blog data
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  update_blog_data: # Job name
+    runs-on: ubuntu-latest # Operating system
+    strategy:
+      matrix:
+        node-version: [20]
+    steps:
+      - name: Checkout # Step name
+        uses: actions/checkout@v4 # Action to checkout the repository
+
+      - name: Update blog data
+        run: |
+          echo "Updating blog data..."
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9.0
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'pnpm'
+      - name: Install dependencies
+        run: pnpm install
+      - name: run script
+        run: |
+          echo "Running script..."
+          pnpm run script
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add .
+          git commit -m "Update blog $(date +'%Y%m%d')"
+          git push origin develop
