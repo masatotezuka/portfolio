@@ -1,7 +1,8 @@
 name: Update blog data
 
 on:
-  pull_request:
+  schedule:
+    - cron: '0 6,18 * * *'
   workflow_dispatch:
 
 jobs:
@@ -16,7 +17,7 @@ jobs:
       - name: Checkout # Step name
         uses: actions/checkout@v4 # Action to checkout the repository
         with:
-          ref: develop
+          ref: main
       - name: Update blog data
         run: |
           echo "Updating blog data..."
@@ -41,8 +42,12 @@ jobs:
         run: |
           git config --global user.email "action@github.com"
           git config --global user.name "GitHub Action"
-          git add .
-          git commit -m "Update blog $(date +'%Y%m%d')"
-          git push origin develop
+          if [[ -n "$(git status --porcelain)" ]]; then
+            git add .
+            git commit -m "Update blog $(date +'%Y%m%d')"
+            git push origin main
+          else
+            echo "No changes to commit"
+          fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
