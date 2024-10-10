@@ -1,7 +1,7 @@
 name: Update blog data
 
 on:
-  push:
+  pull_request:
   workflow_dispatch:
 
 jobs:
@@ -32,7 +32,6 @@ jobs:
         run: |
           echo "Running script..."
           pnpm run script
-
       - name: Commit and push changes
         run: |
           git config --local user.email "action@github.com"
