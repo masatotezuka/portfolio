@@ -69,6 +69,7 @@ const fetchNotionData = async (): Promise<{ notion: BlogData[] }> => {
     }
   })
   const json = await res.json()
+  console.log(json, 'json')
   const items = json.results.map((item: any) => {
     return {
       site: 'notion',
