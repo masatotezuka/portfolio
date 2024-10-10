@@ -76,7 +76,7 @@ const fetchNotionData = async (): Promise<{ notion: BlogData[] }> => {
       title: item.properties.Name.title[0].plain_text ?? undefined,
       link: item.public_url ?? undefined,
       content: undefined,
-      image: item.cover.file.url ?? undefined,
+      image: item.cover?.file.url ?? undefined,
       isoDate: item.created_time ?? undefined
     }
   })
@@ -86,7 +86,11 @@ const fetchNotionData = async (): Promise<{ notion: BlogData[] }> => {
 }
 
 ;(async () => {
-  const [rssData, notionData] = await Promise.all([fetchRssFeed(), fetchNotionData()])
-  const blogData = { ...rssData, ...notionData }
-  writeFileSync('./data/blog.json', JSON.stringify(blogData))
+  try {
+    const [rssData, notionData] = await Promise.all([fetchRssFeed(), fetchNotionData()])
+    const blogData = { ...rssData, ...notionData }
+    writeFileSync('./data/blog.json', JSON.stringify(blogData))
+  } catch (error) {
+    console.error(error)
+  }
 })()

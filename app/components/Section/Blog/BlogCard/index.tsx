@@ -2,14 +2,13 @@ import React, { FC } from 'react'
 import * as styles from './blogCard.css'
 import Link from 'next/link'
 import Image from 'next/image'
-
 type BlogCardProps = {
   title: string
   publishedAt: string
   url: string
   favicon: string
   site: string
-  thumbnail: string
+  thumbnail?: string
 }
 
 export const BlogCard: FC<BlogCardProps> = ({
@@ -31,13 +30,11 @@ export const BlogCard: FC<BlogCardProps> = ({
         </div>
       </div>
       <div className={styles.imageContainer}>
-        <Image
-          src={thumbnail ?? ''}
-          alt={site}
-          width={300}
-          height={300}
-          className={styles.thumbnail}
-        />
+        {thumbnail ? (
+          <Image src={thumbnail} alt={site} width={300} height={300} className={styles.thumbnail} />
+        ) : (
+          <Image src={favicon} alt={site} width={300} height={300} className={styles.thumbnail} />
+        )}
       </div>
     </Link>
   )

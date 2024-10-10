@@ -1,0 +1,53 @@
+name: Update blog data
+
+on:
+  schedule:
+    - cron: '0 6,18 * * *'
+  workflow_dispatch:
+
+jobs:
+  update_blog_data: # Job name
+    runs-on: ubuntu-latest # Operating system
+    permissions:
+      contents: write
+    strategy:
+      matrix:
+        node-version: [20]
+    steps:
+      - name: Checkout # Step name
+        uses: actions/checkout@v4 # Action to checkout the repository
+        with:
+          ref: main
+      - name: Update blog data
+        run: |
+          echo "Updating blog data..."
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9.0
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'pnpm'
+      - name: Install dependencies
+        run: pnpm install
+      - name: run script
+        run: |
+          echo "Running script..."
+          echo "NOTION_API_TOKEN=${{ secrets.NOTION_API_TOKEN }}" > .env
+          echo "NOTION_DATABASE_ID=${{ secrets.NOTION_DATABASE_ID }}" >> .env
+          pnpm run script
+      - name: Commit and push changes
+        run: |
+          git config --global user.email "action@github.com"
+          git config --global user.name "GitHub Action"
+          if [[ -n "$(git status --porcelain)" ]]; then
+            git add .
+            git commit -m "Update blog $(date +'%Y%m%d')"
+            git push origin main
+          else
+            echo "No changes to commit"
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
