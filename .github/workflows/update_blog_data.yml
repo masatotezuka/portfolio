@@ -15,7 +15,8 @@ jobs:
     steps:
       - name: Checkout # Step name
         uses: actions/checkout@v4 # Action to checkout the repository
-
+        with:
+          ref: develop
       - name: Update blog data
         run: |
           echo "Updating blog data..."
@@ -38,8 +39,6 @@ jobs:
         run: |
           git config --global user.email "action@github.com"
           git config --global user.name "GitHub Action"
-          git checkout develop
-          git pull origin develop
           git add .
           git commit -m "Update blog $(date +'%Y%m%d')"
           git push origin develop
