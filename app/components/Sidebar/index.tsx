@@ -10,7 +10,7 @@ export const Sidebar: FC = () => {
         <a href='/' className={styles.name}>
           Masato Tezuka
         </a>
-        <p className={styles.job}>Web Developer</p>
+        <p className={styles.job}>Product Engineer</p>
       </div>
       <NavigationItems />
     </div>

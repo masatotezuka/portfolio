@@ -3,8 +3,15 @@ import * as styles from './bio.css'
 
 const timelineData = [
   {
+    title: '株式会社RightTouch',
+    date: '2025.8〜',
+    description: `・カスタマーサポート向けボイスAI SaaS「QANT スピーク」の開発を担当
+・プロダクトエンジニアとして、企画から実装、顧客との伴走まで一貫して従事
+・PdMを兼務しながら、RAGを用いたAI機能の開発・チューニングを推進`
+  },
+  {
     title: '株式会社Speee',
-    date: '2024.1〜',
+    date: '2024.1〜2025.7',
     description: `・不動産向け営業DXプロダクトを開発
 ・バックエンドとフロントエンドの開発をしつつ、チームリーダーとしてプロジェクトリードに従事
 ・技術スタック: Ruby / Ruby on Rails / GraphQL /TypeScript / React / MySQL / Docker / AWS`

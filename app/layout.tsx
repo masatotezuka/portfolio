@@ -4,7 +4,7 @@ import * as styles from './layout.css'
 export const metadata: Metadata = {
   title: 'Masato | Portfolio',
   description:
-    'Masatoのポートフォリオサイトです。現在はWebエンジニアとして働いており、バックエンドとフロントエンドの開発経験があります。エンジニアリングだけでなく、プロダクトマネジメントにも関心があります。 趣味は筋トレ・サウナ・アニメ・キャンプです。',
+    '手塚真斗のポートフォリオサイトです。株式会社RightTouchでプロダクトエンジニアとして、カスタマーサポート向けボイスAI SaaS「QANT スピーク」の開発に携わっています。',
   icons: {
     icon: '/favicon.png'
   }
